@@ -6,15 +6,15 @@ export const Header: React.FC = () => {
   
 
   return (
-    <header className={"bg-white md:bg-gray-background print:hidden"}>
+    <header className={""}>
       <div
         className={
-          "container flex items-center justify-between md:justify-center md:gap-10 lg:gap-[120px] h-12 md:h-20 py-[12px] px-4 md:py-4 max-w-[1744px]"
+          "container flex items-center justify-between min-h-6"
         }
       >
         <Link href="/" className="relative block w-[120px] h-full md:w-[200px]">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             width={0}
             height={0}
             fill
@@ -23,6 +23,7 @@ export const Header: React.FC = () => {
             priority
           />
         </Link>
+
       </div>
     </header>
   );

@@ -6,8 +6,18 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`container flex flex-col justify-between ${inter.className}`}
     >
+      <div className="">
+        <h1 className="text-xl">Клинический психолог - Юлия Кобалян</h1>
+        <ul>
+          <li>Психосоматический терапевт/Специалист по Германской Новой Медицине</li>
+          <li>Практикующий гипнотерапевт</li>
+          <li>Специалист по системным расстановкам</li>
+          <li>Семейная терапия</li>
+          <li>Детская психосоматика</li>
+        </ul>
+      </div>
       
     
     </div>

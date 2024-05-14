@@ -5,10 +5,10 @@ import React from "react";
 
 export const BaseLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
-    <>
+    <div className="min-h-screen">
       <Header />
-      <main className='grow bg-gray-background text-black'>{children}</main>
+      <main className=' text-black'>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
