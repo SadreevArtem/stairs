@@ -16,9 +16,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "dropdown-arrow": "url('~/public/dropdown-arrow.svg')",
         "cover-marble": "url('~/public/cover.png')",
+        "gray-gradient":
+          "linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(250, 250, 250, 0.97) 48.44%, #F5F5F5 100%)",
       },
       fontFamily: {
-        "sans-inter": ["var(--font-inter)", ...fontFamily.sans]
+        "sans-inter": ["var(--font-inter)", ...fontFamily.sans],
       },
       colors: {
         primary: "",
@@ -45,7 +47,7 @@ const config: Config = {
         xl: "1440px",
       },
       boxShadow: {
-        base: "2px 4px 12px 0px rgba(33, 33, 33, 0.05)"
+        base: "2px 4px 12px 0px rgba(33, 33, 33, 0.05)",
       },
       borderRadius: {
         1: "4px",
@@ -53,8 +55,8 @@ const config: Config = {
         3: "12px",
         4: "16px",
         6: "24px",
-        8: "32px"
-      }
+        8: "32px",
+      },
     },
   },
   plugins: [],
