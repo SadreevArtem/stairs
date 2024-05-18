@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
                 className=""
                 socials={[
                   { id: 1, name: "social-vk", value: "/" },
-                  { id: 2, name: "social-tg", value: "/" },
+                  { id: 2, name: "social-tg", value: "https://t.me/yuliya_kobalyan" },
                   { id: 3, name: "social-youtube", value: "/" },
                   { id: 4, name: "social-ok", value: "/" },
                 ]}
