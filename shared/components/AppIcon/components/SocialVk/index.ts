@@ -1,1 +1,1 @@
-export * from "./SocialVk";
+export * from './SocialVk';

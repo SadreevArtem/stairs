@@ -1,25 +1,36 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Fira_Sans, Inter, Ultra } from "next/font/google";
+import { Author } from "@/shared/components/Author/Author";
+import { AppAccordionGroup } from "@/shared/components/AppAccordionGroup/AppAccordionGroup";
+import { accordeonItems, reviews } from "@/shared/static";
+import { ReviewsBlock } from "@/shared/components/ReviewsBlock/ReviewsBlock";
+import { Contacts } from "@/shared/components/Contacts/Contacts";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Fira_Sans({weight: "300", subsets:["latin", "cyrillic"], });
 
 export default function Home() {
   return (
-    <div
-      className={`container flex flex-col justify-between ${inter.className}`}
-    >
-      <div className="">
-        <h1 className="text-xl">Клинический психолог - Юлия Кобалян</h1>
-        <ul>
-          <li>Психосоматический терапевт/Специалист по Германской Новой Медицине</li>
-          <li>Практикующий гипнотерапевт</li>
-          <li>Специалист по системным расстановкам</li>
-          <li>Семейная терапия</li>
-          <li>Детская психосоматика</li>
-        </ul>
+    <div className={`flex flex-col justify-between ${inter.className}`}>
+      <Author />
+      <div className="md:mt-[60px] mt-8">
+        <AppAccordionGroup
+          className="container"
+          items={accordeonItems}
+          accordionContentSlot={(item) => (
+              <ul>
+                {item.value.map((value) => (
+                  <li key={value}>{value}</li>
+                ))}
+              </ul>
+          )}
+        />
       </div>
-      
-    
+      <div id='reviews' className="mt-[60px]">
+        <ReviewsBlock items={reviews}/>
+      </div>
+      <div id='reviews' className="mt-[60px]">
+        <Contacts/>
+      </div>
     </div>
   );
 }

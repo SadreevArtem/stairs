@@ -36,4 +36,10 @@ body {
   .container {
     @apply max-w-full h-full px-4 md:px-6 lg:max-w-[1024px] lg:px-0 xl:max-w-[1360px] mx-auto;
   }
+  .bordered-card {
+    @apply border border-[#f9deaf] rounded;
+  }
+  .header-link {
+    @apply text-[#454543] hover:text-[#bda070] cursor-pointer;
+  }
 }

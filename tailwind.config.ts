@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 
 const config: Config = {
   content: [
@@ -12,6 +14,17 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "dropdown-arrow": "url('~/public/dropdown-arrow.svg')",
+        "cover-marble": "url('~/public/cover.png')",
+      },
+      fontFamily: {
+        "sans-inter": ["var(--font-inter)", ...fontFamily.sans]
+      },
+      colors: {
+        primary: "",
+        link: "#cbcbc4",
+        secondary: "linear-gradient(28deg,#e0c394,#f9deaf 50%,#e0c394)",
+        hover: "#bda070",
       },
       fontSize: {
         xs: ["12px", "16px"],
@@ -23,14 +36,25 @@ const config: Config = {
         "xl-2": ["28px", "32px"],
         "2xl": ["36px", "44px"],
         "3xl": ["48px", "56px"],
-        "4xl": ["64px", "80px"]
+        "4xl": ["64px", "80px"],
       },
       screens: {
         sm: "320px",
         md: "768px",
         lg: "1280px",
-        xl: "1440px"
+        xl: "1440px",
       },
+      boxShadow: {
+        base: "2px 4px 12px 0px rgba(33, 33, 33, 0.05)"
+      },
+      borderRadius: {
+        1: "4px",
+        2: "8px",
+        3: "12px",
+        4: "16px",
+        6: "24px",
+        8: "32px"
+      }
     },
   },
   plugins: [],

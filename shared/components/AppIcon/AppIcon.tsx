@@ -20,7 +20,22 @@ const SocialYoutube = dynamic(
     ssr: false,
   }
 );
+const StarFilled = dynamic(
+  () => import("./components/StarFilled").then((module) => module.StarFilled),
+  {
+    ssr: false
+  }
+);
 
+const Close = dynamic(() => import("./components/Close").then((module) => module.Close), {
+  ssr: false
+});
+const ChevronRight = dynamic(
+  () => import("./components/ChevronRight").then((module) => module.ChevronRight),
+  {
+    ssr: false
+  }
+);
 
 type Props = {
   type: IconType;
@@ -33,6 +48,9 @@ const icons: Record<IconType, (className: string) => ReactNode> = {
   "social-ok": (className) => <SocialOk className={className} />,
   "social-tg": (className) => <SocialTg className={className} />,
   "social-youtube": (className) => <SocialYoutube className={className} />,
+  "star-filled": (className) => <StarFilled className={className} />,
+  close: (className) => <Close className={className} />,
+  "chevron-right": (className) => <ChevronRight className={className} />,
   
 };
 
