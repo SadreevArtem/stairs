@@ -11,7 +11,7 @@ export const Author = () => {
               width={560}
               height={750}
                 src="/yuliya2.jpg"
-                alt=""
+                alt="Психолог-терапевт"
                 className="top-0 left-0 right-0 bottom-0"
               />
             </div>
@@ -20,7 +20,7 @@ export const Author = () => {
               width={560}
               height={750}
                 src="/yuliya.jpg"
-                alt=""
+                alt="Психосоматика"
                 className="top-0 left-0 right-0 bottom-0"
               />
             </div>
@@ -28,11 +28,11 @@ export const Author = () => {
           <div className="w-[50%] ml-[60px] pt-[100px] max-md:pt-[45px] max-md:ml-[20px] max-md:w-full">
             <h1 className="md:text-[80px] max-md:text-xl max-md:mb-2">Юлия Кобалян</h1>
             <ul className="list-disc pl-4 text-lg flex flex-col gap-2 max-md:text-base w-full">
-                <li>Клинический психолог</li>
-                <li>Психосоматический терапевт</li>
-                <li>Специалист по Германской Новой Медицине</li>
-                <li>Практикующий гипнотерапевт</li>
-                <li>Специалист по системным расстановкам</li>
+                <li><h2>Клинический психолог</h2></li>
+                <li><h3>Психосоматический терапевт</h3></li>
+                <li><h4>Специалист по Германской Новой Медицине</h4></li>
+                <li><h5>Практикующий гипнотерапевт</h5></li>
+                <li><h6>Специалист по системным расстановкам</h6></li>
                 <li>Семейная терапия</li>
                 <li>Детская психосоматика</li>
             </ul>
