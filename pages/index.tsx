@@ -30,7 +30,7 @@ export default function Home() {
           />
         </div>
         <div id="reviews" className="mt-[60px]">
-          <ReviewsBlock items={reviews} />
+          {/* <ReviewsBlock items={reviews} /> */}
         </div>
         <div id="reviews" className="mt-[60px]">
           <Contacts />
