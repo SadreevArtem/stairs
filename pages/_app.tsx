@@ -17,7 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
           ym(97357984, "init", {
                clickmap:true,
                trackLinks:true,
-               accurateTrackBounce:true
+               accurateTrackBounce:true,
+               webvisor:true
           });
               `,
         }}
