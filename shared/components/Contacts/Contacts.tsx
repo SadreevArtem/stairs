@@ -9,15 +9,27 @@ export const Contacts = ()=> {
         <h2 className="text-lg md:text-xl lg:text-2xl  mb-6">Контакты</h2>
         <ul className="flex flex-col gap-4">
           <li>
-            telegramm -
-            <Link className="hover:text-hover" href="https://t.me/yuliya_kobalyan">@yuliya_kobalyan</Link>
+            <Link
+              href={`tel:+79829895209`}
+              className=" w-fit hover:text-hover"
+            >
+              +7 (982) 989 52 09
+            </Link>
           </li>
           <li>
             <Link
-              href={`tel:+79068237117`}
+              href={`tel:+79323262863`}
               className=" w-fit hover:text-hover"
             >
-              +7 (906) 823 71 17
+              +7 (932) 326 28 63
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`tel:+7(3452)942772`}
+              className=" w-fit hover:text-hover"
+            >
+              +7 (3452) 94 27 72
             </Link>
           </li>
         </ul>

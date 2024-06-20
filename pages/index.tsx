@@ -1,13 +1,13 @@
-import Image from "next/image";
-import { Fira_Sans, Inter, Ultra } from "next/font/google";
+import { Arimo, Bitter, Fira_Sans, Inter } from "next/font/google";
 import { Author } from "@/shared/components/Author/Author";
 import { AppAccordionGroup } from "@/shared/components/AppAccordionGroup/AppAccordionGroup";
-import { accordeonItems, MetaData, reviews } from "@/shared/static";
+import { accordeonItems, files, MetaData, reviews } from "@/shared/static";
 import { ReviewsBlock } from "@/shared/components/ReviewsBlock/ReviewsBlock";
 import { Contacts } from "@/shared/components/Contacts/Contacts";
 import { AppHead } from "@/shared/components/AppHead";
+import { ImageGallery } from "@/shared/components/ImageGallery";
 
-const inter = Fira_Sans({weight: "300", subsets:["latin", "cyrillic"], });
+const inter = Bitter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -23,16 +23,18 @@ export default function Home() {
             accordionContentSlot={(item) => (
               <ul>
                 {item.value.map((value) => (
-                  <li key={value}>{value}</li>
+                  <li key={value}>
+                    <div dangerouslySetInnerHTML={{ __html: value ?? "" }} />
+                  </li>
                 ))}
               </ul>
             )}
           />
         </div>
-        <div id="reviews" className="mt-[60px]">
-          {/* <ReviewsBlock items={reviews} /> */}
+        <div id="gallery" className="mt-[60px]">
+          <ImageGallery items={files} className="py-0 pt-4" />
         </div>
-        <div id="reviews" className="mt-[60px]">
+        <div id="contacts" className="mt-[60px]">
           <Contacts />
         </div>
       </div>

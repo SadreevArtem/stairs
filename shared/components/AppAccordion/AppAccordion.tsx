@@ -64,7 +64,7 @@ export const AppAccordion: React.FC<Props> = ({
       >
         <span
           className={clsx(
-            "font-sans-inter text-black font-bold text-lg lg:text-xl whitespace-break-spaces",
+            "font-sans-inter text-black text-lg whitespace-break-spaces",
             {
               uppercase: titleUppercase
             }
